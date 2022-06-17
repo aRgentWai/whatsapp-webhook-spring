@@ -16,6 +16,11 @@ public class WhatsappWebhookController {
     @Value("${whatsapp.token}")
     String whatsappToken;
 
+    @GetMapping(path = "/")
+    public ResponseEntity<String> getHi() {
+            return ResponseEntity.ok("hi");
+    }
+
     @GetMapping(path = "/webhooks")
     public ResponseEntity<String> getWebhooks(
             @RequestParam(name = "hub.mode") String hubMode,
