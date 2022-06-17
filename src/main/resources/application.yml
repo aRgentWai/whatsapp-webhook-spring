@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  http:
+    converters:
+      preferred-json-mapper: gson
+  gson:
+    date-format: yyyy-MM-dd
+
+whatsapp:
+  token: abc
